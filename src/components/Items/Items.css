@@ -1,0 +1,10 @@
+.items-button{
+    background: white;
+    border: none;
+    font-weight: 500;
+    margin: 1rem;
+}
+.items-button.active{
+    color: red;
+    border-bottom: 2px solid red;
+}
