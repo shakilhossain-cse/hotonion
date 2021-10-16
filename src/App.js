@@ -1,9 +1,11 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
+import FoodDetiles from "./components/FoodDetiles/FoodDetiles";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import Banner from "./components/Banner/Banner";
-import Items from "./components/Items/Items";
+import Login from "./components/Login/Login";
+import Main from "./components/Main/Main";
+import Register from "./components/Register/Register";
 
 function App() {
   return (
@@ -12,8 +14,16 @@ function App() {
         <Header />
         <Switch>
           <Route path="/" exact>
-            <Banner />
-            <Items />
+            <Main/>
+          </Route>
+          <Route path="/food/:id">
+            <FoodDetiles/>
+          </Route>
+          <Route path="/login">
+            <Login/>
+          </Route>
+          <Route path="/register">
+            <Register/>
           </Route>
         </Switch>
         <Footer />

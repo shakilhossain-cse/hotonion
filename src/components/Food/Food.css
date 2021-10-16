@@ -3,3 +3,6 @@
     border-radius: 10px;
     
 }
+.food-card > *{
+    text-decoration: none;
+}

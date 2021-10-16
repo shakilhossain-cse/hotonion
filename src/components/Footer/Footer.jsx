@@ -8,7 +8,7 @@ const Footer = () => {
       <Container className="py-5">
         <Row className="text-white">
           <Col xs={12} md={7}>
-            <img src={Logo} height="50" />
+            <img src={Logo} height="50" alt="logo" />
           </Col>
           <Col xs={12} md={5}>
             <div className="d-flex justify-content-between p-4">
