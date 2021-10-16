@@ -18,7 +18,7 @@ const Items = () => {
   }, []);
 
   const handelFood = foodCat => {
-    const fooddata = Foods.filter(food => food.category == foodCat);
+    const fooddata = Foods.filter(food => food.category === foodCat);
     setDisplayFoods(fooddata)
     console.log(Foods);
   };

@@ -10,8 +10,8 @@ const Register = () => {
     name: Yup.string().required("Name is required"),
     email: Yup.string().required("Email is required").email("Email is invalid"),
     password: Yup.string()
-      .min(6, "Password must be at least 6 characters")
-      .required("Password is required"),
+    .required("Password is required")
+      .min(6, "Password must be at least 6 characters"),
     confirmPassword: Yup.string()
       .oneOf([Yup.ref("password"), null], "Passwords must match")
       .required("Confirm Password is required"),
@@ -76,7 +76,7 @@ const Register = () => {
           )}
         </div>
         <label htmlFor="confirmPassword" className="mt-4 mb-2">
-          Retype Password
+          Confirm Password
         </label>
         <div className="mb-2">
           <input
