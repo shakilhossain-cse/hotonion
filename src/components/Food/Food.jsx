@@ -16,7 +16,7 @@ const Food = (props) => {
         <Card.Img variant="top" src={image} className="w-50" />
         <Card.Body className="text-center mt-3">
           <Card.Title className="text-decoration-none text-black">{title}</Card.Title>
-          <Card.Text className="text-muted">{description}</Card.Text>
+          <Card.Text className="text-decoration-none text-muted">{description}</Card.Text>
           <h4>${price}</h4>
         </Card.Body>
       </Card>
